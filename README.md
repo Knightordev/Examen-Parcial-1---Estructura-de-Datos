@@ -88,9 +88,10 @@ EJERCICIO 5
 
 El programa tiene como objetivo identificar qué palabras de una lista son palíndromas, es decir, aquellas que se leen igual de izquierda a derecha que de derecha a izquierda. Para lograrlo, se pide al usuario cuántas palabras quiere ingresar y luego se almacenan dentro de un arreglo o lista.
 
-En el caso de Python, se crea una función llamada es_palindromo que recibe una palabra y la compara con su versión invertida usando un truco muy común en el lenguaje (palabra[::-1]). Si ambas coinciden, la función devuelve verdadero. Después, se recorren todas las palabras ingresadas y se muestran únicamente aquellas que cumplen la condición de ser palíndromas.
+Se crea una función llamada es_palindromo que recibe una palabra y la compara con su versión invertida usando un truco muy común en el lenguaje (palabra[::-1]). Si ambas coinciden, la función devuelve verdadero. Después, se recorren todas las palabras ingresadas y se muestran únicamente aquellas que cumplen la condición de ser palíndromas.
 
 En ambos lenguajes se normalizan las palabras a minúsculas para que las mayúsculas no afecten la comparación (por ejemplo, “Ana” y “ana” se detectan igual). Gracias a este procedimiento, el programa puede trabajar con cualquier lista de palabras que el usuario introduzca y mostrar de manera clara cuáles cumplen la característica de palíndromas.
+
 
     
 EJERCICIO 6:
