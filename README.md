@@ -83,18 +83,18 @@ else:
     print("no es valida esta opcion")
     exit()
 
+
 EJERCICIO 5
 
 El programa tiene como objetivo identificar qué palabras de una lista son palíndromas, es decir, aquellas que se leen igual de izquierda a derecha que de derecha a izquierda. Para lograrlo, se pide al usuario cuántas palabras quiere ingresar y luego se almacenan dentro de un arreglo o lista.
 
 En el caso de Python, se crea una función llamada es_palindromo que recibe una palabra y la compara con su versión invertida usando un truco muy común en el lenguaje (palabra[::-1]). Si ambas coinciden, la función devuelve verdadero. Después, se recorren todas las palabras ingresadas y se muestran únicamente aquellas que cumplen la condición de ser palíndromas.
 
-En el caso de Java, se utiliza un método estático también llamado esPalindromo. Aquí se aprovecha la clase StringBuilder, que permite invertir cadenas de texto con el método .reverse(). Luego, se compara la palabra original con la invertida utilizando .equals(). Al igual que en Python, las palabras se guardan en un arreglo y después se recorren para imprimir únicamente las que son palíndromas.
-
 En ambos lenguajes se normalizan las palabras a minúsculas para que las mayúsculas no afecten la comparación (por ejemplo, “Ana” y “ana” se detectan igual). Gracias a este procedimiento, el programa puede trabajar con cualquier lista de palabras que el usuario introduzca y mostrar de manera clara cuáles cumplen la característica de palíndromas.
 
     
 EJERCICIO 6:
+
 Este programa sirve para calcular cómo se reparte un terreno a lo largo de varias generaciones. La lógica es simple: se empieza con un terreno de cierto tamaño y, en cada generación, ese terreno se divide en partes iguales entre un número fijo de herederos. Cada vez que pasa una generación, la superficie que recibe cada heredero se reduce, porque se vuelve a dividir entre los nuevos descendientes.
 
 Cuando se ejecuta, el programa pide tres datos al usuario: el tamaño inicial del terreno, la cantidad de generaciones que se quieren calcular y el número de herederos por generación. Con esta información, primero revisa que los datos sean correctos, es decir, que el número de generaciones esté entre 0 y 50 y que el número de herederos sea mayor que cero. Después de esa validación, se realizan los cálculos.
