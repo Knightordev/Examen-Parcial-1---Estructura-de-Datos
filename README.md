@@ -82,3 +82,14 @@ elif opciones == 4:
 else:
     print("no es valida esta opcion")
     exit()
+    
+EJERCICIO 6:
+Este programa sirve para calcular cómo se reparte un terreno a lo largo de varias generaciones. La lógica es simple: se empieza con un terreno de cierto tamaño y, en cada generación, ese terreno se divide en partes iguales entre un número fijo de herederos. Cada vez que pasa una generación, la superficie que recibe cada heredero se reduce, porque se vuelve a dividir entre los nuevos descendientes.
+
+Cuando se ejecuta, el programa pide tres datos al usuario: el tamaño inicial del terreno, la cantidad de generaciones que se quieren calcular y el número de herederos por generación. Con esta información, primero revisa que los datos sean correctos, es decir, que el número de generaciones esté entre 0 y 50 y que el número de herederos sea mayor que cero. Después de esa validación, se realizan los cálculos.
+
+El programa muestra dos resultados importantes. En primer lugar, indica cuál será la superficie final que recibirá cada heredero después de todas las generaciones. En segundo lugar, imprime una lista con la evolución del reparto, generación por generación, para que se vea claramente cómo va disminuyendo la superficie conforme se divide.
+
+Por ejemplo, si el terreno inicial es de 100 unidades, con 3 generaciones y 2 herederos en cada una, el reparto sería así: en la primera generación se divide en 2 partes de 50, en la segunda cada heredero recibe 25, y en la tercera cada uno recibe 12.5 unidades.
+
+En conclusión, el programa funciona como una calculadora de herencias que ayuda a entender de manera sencilla y paso a paso cómo se reparte un terreno cuando pasa por varias generaciones de herederos.
