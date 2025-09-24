@@ -23,6 +23,28 @@ método privado para obtener información que imprime los valores devueltos de l
 
 método publico main el cual usa el método privado de agregar 7 temperaturas y el método privado de obtener información
 
+Ejercicio 3:
+El programa convierte numeros positivos en binario, en lo cual, utiliza la recursion como metodo
+para poder convertirlo.
+
+de igual modo, se implemento dos tipos metodos o funciones para poder trabajar.
+
+D_B_E: En esta funcion, su principal papel es en convertir la parte entera en binario,  va dividiendo 
+los numeros entre 2 y guardando el residuo, hasta que llegue al numero 0.
+
+D_B: En esta funcion maneja decimale, en lo cual separa la parte entera con la decimal,
+en la parte enter e manda a la funcion recursiva y la decimal se convierte en una multiplicacion por 2 
+tomando partes enteras de cada resultado.
+
+Como se utilizo la recursividad en el programa, se utiliza en la parte entera, con que da lugar, en utilizar
+ciclo, con ello, la funcion se le conoce como a si misma con un valor mas pequeño (n//2) hasta que 
+llega al caso base (n == 0). Cada vez que regresa de la llamada, agrega el 
+residuo (n % 2) formando así el número binario en el orden correcto.
+
+Para resumir, el programa convierte los numeros decimales y enteros en binario, en lo cual emplementa la recursividad
+cuando llega en la parte entera para poder dividir el numero en binario, de igual modo en la parte
+decimal se maneja con un proceso interativo para poder multiplicar por 2 y en la toma de los enteros.
+
 EJERCICIO 4:
 import random 
 
