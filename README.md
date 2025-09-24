@@ -1,4 +1,24 @@
 # Examen-Parcial-1---Estructura-de-Datos
+EJERCICIO 2
+Se creo una clase llamada temperatura el cual tiene
+una lista de temperaturas no añadidas,
+
+método privado de añadir temperatura insertando una temperatura a la lista de temperaturas
+
+método privado promedio de temperatura
+donde se suma la lista de temperaturas utilizando sum dividiendo entre  el tamaño de esa misma temperatura (con 2 decimales)
+
+método privado obtener temperatura máxima la cual devuelve la temperatura máxima, utiliza max que devuelve el valor máximo de un arreglo
+
+método privado obtener temperatura mínima la cual devuelve la temperatura mínima, utiliza min que devuelve el valor mínimo de un arreglo
+
+método privado días arriba del promedio, el cual crea una lista en donde se agregan cada una de las temperaturas mayores al promedio, y devuelve el tamaño de esa lista
+
+método privado que agrega temperaturas 7 veces siendo las temperaturas flotantes de 2 decimales y utilizando el método privado de añadir temperatura
+
+método privado para obtener información que imprime los valores devueltos de los métodos privados, temperatura promedio, temperatura máxima, temperatura mínima, y días arriba de la temperatura promedio
+
+método publico main el cual usa el método privado de agregar 7 temperaturas y el método privado de obtener información
 
 EJERCICIO 4:
 import random 
