@@ -1,90 +1,88 @@
-# Examen-Parcial-1---Estructura-de-Datos
-EJERCICIO 1
-Este ejercicio cuenta con dos arreglos, el primero almacena los nombres y el segundo la longitud  de los mismos, después en un ciclo While el programa te pide ingresar la cantidad de nombres a escribir, en ese mismo ciclo evalúa con las funciones Try y Except que el valor ingresado sea un entero, después de salir del ciclo While inicia un ciclo for que se repite tantas veces como nombres vas a digitar, dicho ciclo for te pide los ya mencionados nombres y a su vez calcula su longitud y las guarda en el arreglo longitud y al final, con ayuda de un ciclo for se imprimen los nombres y sus longitudes.
+#  Examen Parcial 1 - Estructura de Datos
 
-EJERCICIO 2
-Se creo una clase llamada temperatura el cual tiene
-una lista de temperaturas no añadidas,
+---
 
-método privado de añadir temperatura insertando una temperatura a la lista de temperaturas
+## EJERCICIO 1
+Este ejercicio cuenta con dos arreglos:  
+- El primero almacena los nombres.  
+- El segundo almacena la longitud de los mismos.  
 
-método privado promedio de temperatura
-donde se suma la lista de temperaturas utilizando sum dividiendo entre  el tamaño de esa misma temperatura (con 2 decimales)
+El programa:  
+1. Usa un ciclo **While** para pedir la cantidad de nombres.  
+2. Con **Try** y **Except** valida que el valor ingresado sea un número entero.  
+3. Después, en un **ciclo For**, solicita los nombres, calcula su longitud y guarda estos valores en el arreglo.  
+4. Finalmente, imprime los nombres con sus longitudes.  
 
-método privado obtener temperatura máxima la cual devuelve la temperatura máxima, utiliza max que devuelve el valor máximo de un arreglo
+---
 
-método privado obtener temperatura mínima la cual devuelve la temperatura mínima, utiliza min que devuelve el valor mínimo de un arreglo
+## EJERCICIO 2
+Se creó una clase llamada **Temperatura** con los siguientes elementos:  
 
-método privado días arriba del promedio, el cual crea una lista en donde se agregan cada una de las temperaturas mayores al promedio, y devuelve el tamaño de esa lista
+- Lista de temperaturas.  
+- **Método privado** para añadir una temperatura.  
+- **Método privado promedio de temperatura**: suma la lista y divide entre el tamaño (2 decimales).  
+- **Método privado obtener temperatura máxima**: usa `max`.  
+- **Método privado obtener temperatura mínima**: usa `min`.  
+- **Método privado días arriba del promedio**: lista de temperaturas mayores al promedio y devuelve su tamaño.  
+- **Método privado para agregar 7 temperaturas**: números flotantes de 2 decimales.  
+- **Método privado para obtener información**: muestra promedio, máximo, mínimo y días arriba del promedio.  
+- **Método público main**: ejecuta el agregado de temperaturas y obtiene la información.  
 
-método privado que agrega temperaturas 7 veces siendo las temperaturas flotantes de 2 decimales y utilizando el método privado de añadir temperatura
+---
 
-método privado para obtener información que imprime los valores devueltos de los métodos privados, temperatura promedio, temperatura máxima, temperatura mínima, y días arriba de la temperatura promedio
+##  EJERCICIO 3
+El programa convierte números positivos a **binario** usando **recursividad**.  
 
-método publico main el cual usa el método privado de agregar 7 temperaturas y el método privado de obtener información
+### Funciones:
+- **D_B_E**: Convierte la parte entera dividiendo entre 2 y guardando residuos hasta llegar a 0.  
+- **D_B**: Maneja decimales. Separa parte entera (mandada a la función recursiva) y multiplica la parte decimal por 2, tomando los enteros sucesivos.  
 
-Ejercicio 3:
-El programa convierte numeros positivos en binario, en lo cual, utiliza la recursion como metodo
-para poder convertirlo.
+La recursividad ocurre en la parte entera (`n // 2` hasta el caso base `n == 0`).  
+En cada retorno se agrega el residuo (`n % 2`) construyendo el binario en orden correcto.  
 
-de igual modo, se implemento dos tipos metodos o funciones para poder trabajar.
+En conclusión: convierte **enteros y decimales** a binario con recursividad en la parte entera e iteración en la parte decimal.  
 
-D_B_E: En esta funcion, su principal papel es en convertir la parte entera en binario,  va dividiendo 
-los numeros entre 2 y guardando el residuo, hasta que llegue al numero 0.
+---
 
-D_B: En esta funcion maneja decimale, en lo cual separa la parte entera con la decimal,
-en la parte enter e manda a la funcion recursiva y la decimal se convierte en una multiplicacion por 2 
-tomando partes enteras de cada resultado.
-
-Como se utilizo la recursividad en el programa, se utiliza en la parte entera, con que da lugar, en utilizar
-ciclo, con ello, la funcion se le conoce como a si misma con un valor mas pequeño (n//2) hasta que 
-llega al caso base (n == 0). Cada vez que regresa de la llamada, agrega el 
-residuo (n % 2) formando así el número binario en el orden correcto.
-
-Para resumir, el programa convierte los numeros decimales y enteros en binario, en lo cual emplementa la recursividad
-cuando llega en la parte entera para poder dividir el numero en binario, de igual modo en la parte
-decimal se maneja con un proceso interativo para poder multiplicar por 2 y en la toma de los enteros.
-
-EJERCICIO 4:
+##  EJERCICIO 4
+```
 import random 
 
 longitud = int(input("Ingresa la longitud del vetor: "))
 
-a = [None] * longitud     se crean vectores vacíos con una cantidad de espacios definidos según haya ingresado el usuario
+a = [None] * longitud     # Se crean vectores vacíos según lo ingresado
 b = [None] * longitud
 sumando = [None] * longitud 
 restando = [None] * longitud
 
-for i in range(longitud):                                       Se llenan los vectores usando la cantidad de espacios definidos y un rango de -100 a 100
+for i in range(longitud):   # Se llenan con números aleatorios de -100 a 100
     a[i]=random.randint (-100,100)
-
     b[i]=random.randint (-100,100)
 
-for i in range(longitud):                        Se suma y se resta a y b usando[i] para que se recorrer y sumar los valores individualmente
+for i in range(longitud):   # Se suman y restan los valores
     sumando[i] = a[i] + b[i]
     restando[i] = a[i] - b[i]
 
-opciones = int(input("Seleccione que vector desea ver,elija entre 1=a, 2=b, 3=c sumando a y b, 4=c restando a y b: ")) se le asignan números a cada letra y se usan if para imprimir lo q pide y validando si esta pidiendo una opción posible
+opciones = int(input("Seleccione qué vector desea ver (1=a, 2=b, 3=suma, 4=resta): "))
 
 if opciones == 1:
-    print("vector A:",a)
+    print("vector A:", a)
 
 elif opciones == 2:
     print("vector B:", b)
 
 elif opciones == 3:
-    print("vector c sumando a y b:", sumando)
+    print("vector C (sumando a y b):", sumando)
 
 elif opciones == 4:
-    print("vector c restando a y b:", restando)
+    print("vector C (restando a y b):", restando)
     exit()
 
 else:
-    print("no es valida esta opcion")
+    print("No es válida esta opción")
     exit()
-
-
-EJERCICIO 5
+````
+## EJERCICIO 5
 
 El programa tiene como objetivo identificar qué palabras de una lista son palíndromas, es decir, aquellas que se leen igual de izquierda a derecha que de derecha a izquierda. Para lograrlo, se pide al usuario cuántas palabras quiere ingresar y luego se almacenan dentro de un arreglo o lista.
 
@@ -92,16 +90,10 @@ Se crea una función llamada es_palindromo que recibe una palabra y la compara c
 
 En ambos lenguajes se normalizan las palabras a minúsculas para que las mayúsculas no afecten la comparación (por ejemplo, “Ana” y “ana” se detectan igual). Gracias a este procedimiento, el programa puede trabajar con cualquier lista de palabras que el usuario introduzca y mostrar de manera clara cuáles cumplen la característica de palíndromas.
 
-
-    
-EJERCICIO 6:
+## EJERCICIO 6
 
 Este programa sirve para calcular cómo se reparte un terreno a lo largo de varias generaciones. La lógica es simple: se empieza con un terreno de cierto tamaño y, en cada generación, ese terreno se divide en partes iguales entre un número fijo de herederos. Cada vez que pasa una generación, la superficie que recibe cada heredero se reduce, porque se vuelve a dividir entre los nuevos descendientes.
 
 Cuando se ejecuta, el programa pide tres datos al usuario: el tamaño inicial del terreno, la cantidad de generaciones que se quieren calcular y el número de herederos por generación. Con esta información, primero revisa que los datos sean correctos, es decir, que el número de generaciones esté entre 0 y 50 y que el número de herederos sea mayor que cero. Después de esa validación, se realizan los cálculos.
 
 El programa muestra dos resultados importantes. En primer lugar, indica cuál será la superficie final que recibirá cada heredero después de todas las generaciones. En segundo lugar, imprime una lista con la evolución del reparto, generación por generación, para que se vea claramente cómo va disminuyendo la superficie conforme se divide.
-
-Por ejemplo, si el terreno inicial es de 100 unidades, con 3 generaciones y 2 herederos en cada una, el reparto sería así: en la primera generación se divide en 2 partes de 50, en la segunda cada heredero recibe 25, y en la tercera cada uno recibe 12.5 unidades.
-
-En conclusión, el programa funciona como una calculadora de herencias que ayuda a entender de manera sencilla y paso a paso cómo se reparte un terreno cuando pasa por varias generaciones de herederos.
